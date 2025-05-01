@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{49266d25-fcbe-4187-976a-af03681d7565}</ProjectGuid>
-    <RootNamespace>ProAss08</RootNamespace>
+    <ProjectGuid>{5dc4e6ba-2f7d-407d-ac70-831cd9ab754e}</ProjectGuid>
+    <RootNamespace>ProAss10</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ProAss08.c" />
+    <ClCompile Include="ProAss10.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

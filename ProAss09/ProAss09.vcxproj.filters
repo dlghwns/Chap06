@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ProAss08.c">
+    <ClCompile Include="ProAss09.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
