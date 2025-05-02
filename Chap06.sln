@@ -34,6 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "솔루션 항목", "솔루�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProAss13", "ProAss13\ProAss13.vcxproj", "{C93D2593-A2B3-4C4A-A96A-C12725EDFBCB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProAss14", "ProAss14\ProAss14.vcxproj", "{3CC8E902-AB1A-434E-B45E-BE99803CBFB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -146,6 +148,14 @@ Global
 		{C93D2593-A2B3-4C4A-A96A-C12725EDFBCB}.Release|x64.Build.0 = Release|x64
 		{C93D2593-A2B3-4C4A-A96A-C12725EDFBCB}.Release|x86.ActiveCfg = Release|Win32
 		{C93D2593-A2B3-4C4A-A96A-C12725EDFBCB}.Release|x86.Build.0 = Release|Win32
+		{3CC8E902-AB1A-434E-B45E-BE99803CBFB6}.Debug|x64.ActiveCfg = Debug|x64
+		{3CC8E902-AB1A-434E-B45E-BE99803CBFB6}.Debug|x64.Build.0 = Debug|x64
+		{3CC8E902-AB1A-434E-B45E-BE99803CBFB6}.Debug|x86.ActiveCfg = Debug|Win32
+		{3CC8E902-AB1A-434E-B45E-BE99803CBFB6}.Debug|x86.Build.0 = Debug|Win32
+		{3CC8E902-AB1A-434E-B45E-BE99803CBFB6}.Release|x64.ActiveCfg = Release|x64
+		{3CC8E902-AB1A-434E-B45E-BE99803CBFB6}.Release|x64.Build.0 = Release|x64
+		{3CC8E902-AB1A-434E-B45E-BE99803CBFB6}.Release|x86.ActiveCfg = Release|Win32
+		{3CC8E902-AB1A-434E-B45E-BE99803CBFB6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
