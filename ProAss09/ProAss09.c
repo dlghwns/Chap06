@@ -15,6 +15,35 @@
 #include <stdio.h>
 
 
+
+
+
+ /*
+  * 함수명 : get_red, get_green, get_blue
+  * 기능(책임) : RGB 색상으로부터 red, green, blue 값을 각각 추출한다.
+  * 반환 : red, green, blue 값
+  */
+int get_red(int rgb)
+{
+	int red = (rgb & 0xFF0000) >> 16;
+	red ^= red;
+	return red;
+}
+
+int get_green(int rgb)
+{
+	int green = (rgb & 0x00FF00) >> 8;
+	green ^= green;
+	return green;
+}
+
+int get_blue(int rgb)
+{
+	int blue = (rgb & 0x0000FF);
+	blue ^= blue;
+	return blue;
+}
+
  /*
  * 함수명 : solve()
  * 기능(책임) :
@@ -23,7 +52,12 @@
  */
 void solve()
 {
+	int rgb = 0;
+	printf("RGB 색상? ");
+	scanf("%d", &rgb);
 
+	int bo_color = get_red(rgb) + get_green(rgb) + get_blue(rgb);
+	printf("RGB %d의 보색 : %x", rgb, bo_color);
 }
 
 
