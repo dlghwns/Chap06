@@ -4,7 +4,7 @@
  * 앞에서 정의한 get_red, get_green, get_blue 함수를 함께 이용해서 입력받은 RGB 색상의 보색을 구해서 출력하는 프로그램을 작성하시오.
  * 작성자: 이호준
 
- * 날짜:
+ * 날짜: 2025.05.15
 
  * 버전: v1.0
 
@@ -26,27 +26,25 @@
 int get_red(int rgb)
 {
 	int red = (rgb & 0xFF0000) >> 16;
-	red ^= red;
-	return red;
+	return 0xff ^ red;
 }
 
 int get_green(int rgb)
 {
 	int green = (rgb & 0x00FF00) >> 8;
-	green ^= green;
-	return green;
+	return 0xff ^ green;
+
 }
 
 int get_blue(int rgb)
 {
 	int blue = (rgb & 0x0000FF);
-	blue ^= blue;
-	return blue;
+	return 0xff ^ blue;
 }
 
  /*
  * 함수명 : solve()
- * 기능(책임) :
+ * 기능(책임) : rgb값을 입력받아 get_색상 함수를 호출하여 보색을 리턴받아 출력한다.
  *
  * 반환 : 없음
  */
@@ -54,10 +52,9 @@ void solve()
 {
 	int rgb = 0;
 	printf("RGB 색상? ");
-	scanf("%d", &rgb);
+	scanf("%x", &rgb);
 
-	int bo_color = get_red(rgb) + get_green(rgb) + get_blue(rgb);
-	printf("RGB %d의 보색 : %x", rgb, bo_color);
+	printf("RGB %#x의 보색 : 0x%02x%02x%02x", rgb, get_red(rgb), get_green(rgb), get_blue(rgb));
 }
 
 
